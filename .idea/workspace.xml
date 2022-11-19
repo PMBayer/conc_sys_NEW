@@ -64,7 +64,7 @@
       <recent name="ROBOT.Exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SiLSiL">
+  <component name="RunManager" selected="Application.SiLTestAPP">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ROBOT.Applications.GUI" />
       <module name="conc_sys_NEW" />
@@ -78,8 +78,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SiLSiL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ROBOT.Applications.SiLSiL" />
+    <configuration name="SiLTestAPP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ROBOT.Applications.SiLTestAPP" />
       <module name="conc_sys_NEW" />
       <extension name="coverage">
         <pattern>
@@ -93,7 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SiLSiL" />
+        <item itemvalue="Application.SiLTestAPP" />
         <item itemvalue="Application.GUI" />
       </list>
     </recent_temporary>
