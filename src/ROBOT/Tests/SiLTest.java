@@ -119,6 +119,7 @@ public class SiLTest extends Thread implements CarSensorInput, CarMotorOutput {
         Thread.sleep(500);
 
         //another vehicle appears in front right to the robot -> should drive left
+        distances.put(Sensor.FL, 80d);
         distances.put(Sensor.FR, 30d);
 
         Thread.sleep(3000);

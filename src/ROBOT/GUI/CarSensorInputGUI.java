@@ -110,7 +110,7 @@ public class CarSensorInputGUI extends Application implements CarSensorInput, Ca
 
         scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("BummInput");
+        stage.setTitle("Input");
         stage.show();
 
         scene.getWindow().addEventFilter(WindowEvent.WINDOW_CLOSE_REQUEST, new EventHandler<Event>() {

@@ -70,7 +70,7 @@ public class CarMotorOutputGUI extends Application implements CarMotorOutput {
 
         scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("WummOutput");
+        stage.setTitle("Output");
         stage.show();
 
         scene.getWindow().addEventFilter(WindowEvent.WINDOW_CLOSE_REQUEST, new EventHandler<Event>() {

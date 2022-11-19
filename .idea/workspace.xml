@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36ec3e67-2c29-440e-91be-b00cac055f34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ROBOT/Tests/SiLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ROBOT/Tests/SiLTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ROBOT/GUI/CarMotorOutputGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ROBOT/GUI/CarMotorOutputGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ROBOT/GUI/CarSensorInputGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ROBOT/GUI/CarSensorInputGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ROBOT/resources/output_table.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ROBOT/resources/output_table.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
       <recent name="ROBOT.Exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SiLTestAPP">
+  <component name="RunManager" selected="Application.GUI">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ROBOT.Applications.GUI" />
       <module name="conc_sys_NEW" />
@@ -93,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SiLTestAPP" />
         <item itemvalue="Application.GUI" />
+        <item itemvalue="Application.SiLTestAPP" />
       </list>
     </recent_temporary>
   </component>
@@ -108,7 +109,7 @@
       <updated>1668799549277</updated>
       <workItem from="1668799550606" duration="13649000" />
       <workItem from="1668853270914" duration="2011000" />
-      <workItem from="1668855309632" duration="9411000" />
+      <workItem from="1668855309632" duration="9645000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1668864488754</created>
@@ -117,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668864488754</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated SiL; Rule for steering left seems to be broken">
+      <created>1668864834095</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668864834095</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated SiL; Rule for steering left seems to be broken">
+      <created>1668864881976</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668864881976</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +143,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="updated SiL; Rule for steering left seems to be broken" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated SiL; Rule for steering left seems to be broken" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

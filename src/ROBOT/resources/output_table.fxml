@@ -56,13 +56,13 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                     </rowConstraints>
                     <children>
-                        <Label text="Sensor FL Wert:"/>
-                        <Label text="Sensor FR Wert:" GridPane.rowIndex="1"/>
-                        <Label text="Sensor BL Wert:" GridPane.rowIndex="2"/>
-                        <Label text="Sensor BR Wert:" GridPane.rowIndex="3"/>
-                        <Label text="Lenkeinschlag:" GridPane.rowIndex="4"/>
-                        <Label text="Geschwindigkeit:" GridPane.rowIndex="5"/>
-                        <Label text="Manöver:" GridPane.rowIndex="6"/>
+                        <Label text="Sensor FL Value:"/>
+                        <Label text="Sensor FR Value:" GridPane.rowIndex="1"/>
+                        <Label text="Sensor BL Value:" GridPane.rowIndex="2"/>
+                        <Label text="Sensor BR Value:" GridPane.rowIndex="3"/>
+                        <Label text="Steering:" GridPane.rowIndex="4"/>
+                        <Label text="Speed:" GridPane.rowIndex="5"/>
+                        <Label text="Command:" GridPane.rowIndex="6"/>
                         <TextField fx:id="valFL" editable="false" GridPane.columnIndex="1"/>
                         <TextField fx:id="valFR" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
                         <TextField fx:id="valBL" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
