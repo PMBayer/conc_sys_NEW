@@ -1,0 +1,290 @@
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<html>
+<head>
+    <meta content="en-us" http-equiv="Content-Language">
+    <title>Makeurl Task</title>
+</head>
+
+<body alink="#525D76" bgcolor="#ffffff" link="#525D76"
+      text="#000000" vlink="#525D76">
+
+<table border="0" cellspacing="4" width="100%">
+
+    <!-- PAGE HEADER -->
+    <tr>
+        <td>
+            <table border="0" width="100%">
+                <tr>
+                    <td valign="bottom">
+                        <font face="arial,helvetica,sanserif" size="+3"><strong>Makeurl Task</strong></font>
+                    </td>
+                    <td>
+                        <!-- PROJECT LOGO -->
+                        <a href="http://ant.apache.org/">
+                            <img align="right" alt="Apache Ant" border="0" src="../images/ant_logo_large.gif"/>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- START RIGHT SIDE MAIN BODY -->
+    <tr>
+        <td align="left" valign="top">
+
+            <!-- Applying task/long-description -->
+            <!-- Start Description -->
+            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#525D76">
+                        <font color="#ffffff" face="arial,helvetica.sanserif">
+                            <a name="description">
+                                <strong>Description</strong></a></font>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <blockquote>
+                            This task takes one or more filenames and turns them into URLs, which it then assigns to a
+                            property.
+                            Useful when setting up RMI or JNLP codebases, for example.
+                            Nested filesets are supported; if present, these are turned into the URLs with the supplied
+                            separator between them (default: space).
+                            <p/>
+                            <p>Examples:</p>
+                            <pre>
+&lt;makeurl file="${user.home}/.m2/repository" property="m2.repository.url"/&gt;
+</pre>
+                            Sets the property <code>m2.repository.url</code> to the file: URL of the local Maven2
+                            repository.
+                            <pre>
+&lt;makeurl property="codebase"&gt;&lt;fileset dir="lib includes="*.jar"/&gt;&lt;/makeurl&gt;
+</pre>
+                            Set the property <code>codebase</code> to the three URLs of the files provided as nested
+                            elements.
+                        </blockquote>
+                    </td>
+                </tr>
+
+            </table>
+            <!-- End Description -->
+
+            <!-- Ignore -->
+
+
+            <!-- Start Attributes -->
+            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#525D76">
+                        <font color="#ffffff" face="arial,helvetica.sanserif">
+                            <a name="attributes">
+                                <strong>Parameters</strong></a></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <blockquote>
+                            <table>
+                                <tr>
+                                    <td align="left" bgcolor="#cccccc" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1"><b>Attribute</b></font>
+                                    </td>
+                                    <td align="left" bgcolor="#cccccc" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif"
+                                              size="-1"><b>Description</b></font>
+                                    </td>
+                                    <td align="left" bgcolor="#cccccc" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif"
+                                              size="-1"><b>Type</b></font>
+                                    </td>
+                                    <td align="left" bgcolor="#cccccc" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif"
+                                              size="-1"><b>Requirement</b></font>
+                                    </td>
+                                </tr>
+                                <!-- Attribute Group -->
+
+                                <!-- Attribute Group -->
+                                <!-- Attribute -->
+                                <tr>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">file</font>
+                                    </td>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">name of a file
+                                            to be converted into a URL</font>
+                                    </td>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">File</font>
+                                    </td>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">optional, if a
+                                            nested fileset or path is supplied</font>
+                                    </td>
+                                </tr>
+                                <!-- Attribute -->
+                                <tr>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">property</font>
+                                    </td>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">name of a
+                                            property to set to the URL</font>
+                                    </td>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">String</font>
+                                    </td>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">required</font>
+                                    </td>
+                                </tr>
+                                <!-- Attribute -->
+                                <tr>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">separator</font>
+                                    </td>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">separator for
+                                            the multi-URL option</font>
+                                    </td>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">String</font>
+                                    </td>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">optional</font>
+                                    </td>
+                                </tr>
+                                <!-- Attribute -->
+                                <tr>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">validate</font>
+                                    </td>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">validate that
+                                            every named file exists</font>
+                                    </td>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">boolean</font>
+                                    </td>
+                                    <td align="left" bgcolor="#eeeeee" valign="top">
+                                        <font color="#000000" face="arial,helvetica,sanserif" size="-1">optional;
+                                            default: true</font>
+                                    </td>
+                                </tr>
+
+
+                            </table>
+                        </blockquote>
+                    </td>
+                </tr>
+
+            </table>
+            <!-- End Attributes -->
+
+            <!-- Start Elements -->
+            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#525D76">
+                        <font color="#ffffff" face="arial,helvetica.sanserif">
+                            <a name="elements">
+                                <strong>Parameters as nested elements</strong></a></font>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <blockquote>
+                            <!-- Start Element -->
+                            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                                <tr>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#828DA6">
+                                        <font color="#ffffff" face="arial,helvetica.sanserif" size="-1">
+                                            <strong>fileset</strong> (org.apache.tools.ant.types.FileSet)</font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <blockquote>
+                                            A fileset of JAR files to include in the URL list, each separated by the
+                                            separator.
+                                            <!-- Ignore -->
+                                            <!-- Ignore -->
+
+                                        </blockquote>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- End Element -->
+                            <!-- Start Element -->
+                            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                                <tr>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#828DA6">
+                                        <font color="#ffffff" face="arial,helvetica.sanserif" size="-1">
+                                            <strong>path</strong> (org.apache.tools.ant.types.Path)</font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <blockquote>
+                                            Add a path to the URL. All elements in the path will be converted to
+                                            individual URL entries.
+                                            <!-- Ignore -->
+                                            <!-- Ignore -->
+
+                                        </blockquote>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- End Element -->
+
+                        </blockquote>
+                    </td>
+                </tr>
+
+            </table>
+            <!-- End Elements -->
+
+
+        </td>
+    </tr>
+    <!-- END RIGHT SIDE MAIN BODY -->
+
+</table>
+
+</body>
+</html>

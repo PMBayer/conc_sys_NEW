@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<project name="ROBOT" default="jar" basedir=".">
+    <property environment="env"/>
+    <property name="java-home" location="C:\Program Files (x86)\Java\jdk1.7.0_80"/>
+    <property name="buildpath" location="build/ROBOT"/>
+    <property name="jfx-classpath" value="${java-home}\jre\lib\jfxrt.jar"/>
+    <property name="target" value="1.7"/>
+    <property name="classpath" value="${jfx-classpath}"/>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile" depends="clean">
+        <echo>${ant.version}</echo>
+        <mkdir dir="${buildpath}/classes"/>
+        <javac srcdir="src" destdir="${buildpath}/classes" includeantruntime="true" classpath="${classpath}"
+               executable="{java-home}\bin\javac.exe" target="${target}" source="${target}"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="${buildpath}/jar"/>
+
+        <jar destfile="${buildpath}/jar/GUI.jar" basedir="${buildpath}/classes">
+            <zipgroupfileset dir="${java-home}\jre\lib" includes="jfxrt.jar"/>
+            <fileset dir="src/ROBOT/resources"/>
+            <manifest>
+                <attribute name="Main-Class" value="ROBOT.Applications.GUI"/>
+            </manifest>
+        </jar>
+
+        <jar destfile="${buildpath}/jar/SiLSiL.jar" basedir="${buildpath}/classes">
+            <manifest>
+                <attribute name="Main-Class" value="ROBOT.Applications.SiLSiL"/>
+            </manifest>
+        </jar>
+
+        <jar destfile="${buildpath}/jar/SiLGUI.jar" basedir="${buildpath}/classes">
+            <zipgroupfileset dir="${java-home}\jre\lib" includes="jfxrt.jar"/>
+            <fileset dir="src/ROBOT/resources"/>
+            <manifest>
+                <attribute name="Main-Class" value="ROBOT.Applications.SiLGUI"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run:gui" depends="jar">
+        <java jar="${buildpath}/jar/GUI.jar" fork="true"/>
+    </target>
+
+    <target name="run:sil-sil" depends="jar">
+        <java jar="${buildpath}/jar/SiLSiL.jar" fork="true"/>
+    </target>
+
+    <target name="run:sil-gui" depends="jar">
+        <java jar="${buildpath}/jar/SiLGUI.jar" fork="true"/>
+    </target>
+
+</project>
