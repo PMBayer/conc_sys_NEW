@@ -1,11 +1,18 @@
 <?xml version="1.0" ?>
 <project name="ROBOT" default="jar" basedir=".">
     <property environment="env"/>
+    <property name="lejos-ev3-home" location="C:\Program Files\leJOS EV3"/>
+    <property name="lejos-nxj-home" location="C:\Program Files (x86)\leJOS NXJ"/>
     <property name="java-home" location="C:\Program Files (x86)\Java\jdk1.7.0_80"/>
     <property name="buildpath" location="build/ROBOT"/>
+    <property name="debugpath" location="debug"/>
     <property name="jfx-classpath" value="${java-home}\jre\lib\jfxrt.jar"/>
     <property name="target" value="1.7"/>
     <property name="classpath" value="${jfx-classpath}"/>
+    <property name="ev3-classpath"
+              value="${lejos-ev3-home}\lib\ev3\dbusjava.jar;${lejos-ev3-home}\lib\ev3\ev3classes.jar;${lejos-ev3-home}\lib\pc\ev3tools.jar"/>
+    <property name="nxj-classpath" value="${lejos-nxj-home}\lib\nxt\classes.jar"/>
+    <property name="ev3-host" value="10.0.1.1"/>
 
     <target name="clean">
         <delete dir="build"/>
@@ -15,7 +22,8 @@
         <echo>${ant.version}</echo>
         <mkdir dir="${buildpath}/classes"/>
         <javac srcdir="src" destdir="${buildpath}/classes" includeantruntime="true" classpath="${classpath}"
-               executable="{java-home}\bin\javac.exe" target="${target}" source="${target}"/>
+               executable="{java-home}\bin\javac.exe" target="${target}" source="${target}">
+        </javac>
     </target>
 
     <target name="jar" depends="compile">
@@ -42,6 +50,18 @@
                 <attribute name="Main-Class" value="ROBOT.Applications.SiLGUI"/>
             </manifest>
         </jar>
+
+        <jar destfile="${buildpath}/jar/EV3.jar" basedir="${buildpath}/classes">
+            <manifest>
+                <attribute name="Main-Class" value="ROBOT.Applications.EV3"/>
+            </manifest>
+        </jar>
+
+        <jar destfile="${buildpath}/jar/SiLEV3.jar" basedir="${buildpath}/classes">
+            <manifest>
+                <attribute name="Main-Class" value="ROBOT.Applications.SiLEV3"/>
+            </manifest>
+        </jar>
     </target>
 
     <target name="run:gui" depends="jar">
@@ -55,5 +75,34 @@
     <target name="run:sil-gui" depends="jar">
         <java jar="${buildpath}/jar/SiLGUI.jar" fork="true"/>
     </target>
+
+    <target name="nxj:compile">
+        <delete dir="${buildpath}/nxt"/>
+        <mkdir dir="${buildpath}/nxt"/>
+        <exec executable="${lejos-nxj-home}\bin\nxjc.bat" dir="src">
+            <env key="Path" value="${java-home}\bin;${lejos-nxj-home}\bin"/>
+            <arg line="ROBOT\Applications\NXT.java -d '${buildpath}/nxt'"/>
+        </exec>
+        <exec executable="${lejos-nxj-home}\bin\nxjc.bat" dir="src">
+            <env key="Path" value="${java-home}\bin;${lejos-nxj-home}\bin"/>
+            <arg line="ROBOT\NXT\*.java -d '${buildpath}/nxt'"/>
+        </exec>
+    </target>
+
+    <target name="nxj:deploy" depends="nxj:compile">
+        <exec executable="${lejos-nxj-home}\bin\nxj.bat" dir="${buildpath}/nxt">
+            <env key="Path" value="${java-home}\bin;${lejos-nxj-home}\bin"/>
+            <arg line="-r ROBOT.Applications.NXT -o '${debugpath}/NXTException.nxj' -od '${debugpath}/NXTException.nxd'"/>
+        </exec>
+    </target>
+
+
+    <target name="ev3:deploy" depends="jar">
+        <scp todir="root:@${ev3-host}:/home/lejos/programs/" trust="true">
+            <fileset file="${buildpath}/jar/EV3.jar"/>
+            <fileset file="${buildpath}/jar/SiLEV3.jar"/>
+        </scp>
+    </target>
+
 
 </project>
