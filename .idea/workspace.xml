@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36ec3e67-2c29-440e-91be-b00cac055f34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LejosPreferencesConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/leJOS_EV3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/classes/ROBOT/Applications/EV3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/classes/ROBOT/Applications/NXT.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/classes/ROBOT/Applications/SiLEV3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/classes/ROBOT/EV3/EV3MotorOutput.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/classes/ROBOT/EV3/EV3SensorInput$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/classes/ROBOT/EV3/EV3SensorInput.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/classes/ROBOT/NXT/NXTMotorOutput.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/classes/ROBOT/NXT/NXTSensorInput.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/jar/EV3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/jar/SiLEV3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/nxt/ROBOT/CarException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/nxt/ROBOT/Logic/Interfaces/CarMotorOutput.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/nxt/ROBOT/Logic/Interfaces/CarSensorInput$Sensor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/nxt/ROBOT/Logic/Interfaces/CarSensorInput.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/nxt/ROBOT/NXT/NXTMotorOutput.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/ROBOT/nxt/ROBOT/NXT/NXTSensorInput.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/apache-ant-1.9.16/lib/jsch-0.1.45.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ROBOT/Applications/EV3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ROBOT/Applications/NXT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ROBOT/Applications/SiLEV3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ROBOT/EV3/EV3MotorOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ROBOT/EV3/EV3SensorInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ROBOT/NXT/NXTMotorOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ROBOT/NXT/NXTSensorInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ROBOT/classes/ROBOT/Applications/SiLGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/ROBOT/classes/ROBOT/Applications/SiLGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ROBOT/jar/GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/ROBOT/jar/GUI.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ROBOT/jar/SiLGUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/ROBOT/jar/SiLGUI.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ROBOT/jar/SiLSiL.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/ROBOT/jar/SiLSiL.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conc_sys_NEW.iml" beforeDir="false" afterPath="$PROJECT_DIR$/conc_sys_NEW.iml" afterDir="false" />
-    </list>
+    <list default="true" id="36ec3e67-2c29-440e-91be-b00cac055f34" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,21 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pascal/IdeaProjects/conc_sys_NEW/lib/jsch-0.1.45.jar&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Pascal/IdeaProjects/conc_sys_NEW/lib/jsch-0.1.45.jar",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.customizations"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Pascal\IdeaProjects\conc_sys_NEW\lib" />
@@ -193,7 +158,7 @@
       <workItem from="1670759900798" duration="2740000" />
       <workItem from="1670762696525" duration="440000" />
       <workItem from="1670763149202" duration="1616000" />
-      <workItem from="1670892911428" duration="4000" />
+      <workItem from="1670892911428" duration="101000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1668864488754</created>
@@ -237,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670665864998</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="advanced build script with deploy implemented">
+      <created>1670892982154</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670892982154</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +234,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="updated SiL; Rule for steering left seems to be broken" />
     <MESSAGE value="basic build script completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic build script completed" />
+    <MESSAGE value="advanced build script with deploy implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="advanced build script with deploy implemented" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
