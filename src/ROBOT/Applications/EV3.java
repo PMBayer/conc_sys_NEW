@@ -7,6 +7,8 @@ import ROBOT.Logic.Controller;
 import ROBOT.Logic.Interfaces.CarMotorOutput;
 import ROBOT.Logic.Interfaces.CarSensorInput;
 import ROBOT.Logic.Observer;
+import lejos.hardware.Button;
+import lejos.hardware.lcd.LCD;
 
 public class EV3 {
     public static void main(String[] args) {
@@ -19,7 +21,9 @@ public class EV3 {
             CarSensorInput input = new EV3SensorInput();
             CarMotorOutput output = new EV3MotorOutput();
             Controller controller = new Controller(input, output);
+            LCD.drawString("Init successful", 0, 6);
             controller.start();
+            LCD.drawString("Controller started", 0, 7);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -27,6 +31,7 @@ public class EV3 {
             System.exit(1);
         }
 
+        Button.waitForAnyPress();
         System.exit(0);
 
     }

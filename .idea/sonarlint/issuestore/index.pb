@@ -1,6 +1,4 @@
 
-N
-src/ROBOT/Logic/Navigator.java,7\e\7e976a6628690f881bf02910a6d7a12f6b5921c8
 L
 src/ROBOT/Tests/SiLTest.java,9\9\995f85c531aa397001e3bcf1853b0ac51af77d0a
 U
@@ -9,8 +7,6 @@ R
 "src/ROBOT/Applications/SiLSiL.java,7\7\77143ccef5f51b75973066a8dc915af8df57eff8
 U
 %src/ROBOT/resources/output_table.fxml,2\7\27d1509b567c20fa62a5e562728311c3fed2454b
-Y
-)src/ROBOT/Logic/CompatibilitySupport.java,e\6\e61b7a38f40ad5ca85d7680ea30e21d0aa368428
 K
 src/ROBOT/CarException.java,8\2\82e7584c2be211d3b284e1900235cd977f0f31da
 O
@@ -19,3 +15,13 @@ M
 .idea/libraries/leJOS_EV3.xml,3\0\308546324d0653924cd0ac32dfaedcad0138de7d
 @
 conc_sys_NEW.iml,5\0\50e7fe9cc36c6af63a049a6ac7c6f4736886f967
+S
+#src/ROBOT/Applications/AutoGUI.java,8\3\8305bf381228b4f0a594b5fe48ed6b22558f405b
+R
+"src/ROBOT/Applications/SiLGUI.java,f\9\f900279a1179103c233ee974caebc879c106893f
+Q
+!src/ROBOT/NXT/NXTSensorInput.java,f\5\f5687794fd48fc81a6f6983fccf8f50eeaf02a9d
+O
+src/ROBOT/Applications/NXT.java,3\0\304b5bfd549d696ac41c21bd1c14c10f2bf17577
+Q
+!src/ROBOT/NXT/NXTMotorOutput.java,d\8\d8aa9cd04e5ea5547c55264abc2da0a63d26c6dd
