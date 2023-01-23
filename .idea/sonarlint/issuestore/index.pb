@@ -1,10 +1,6 @@
 
-L
-src/ROBOT/Tests/SiLTest.java,9\9\995f85c531aa397001e3bcf1853b0ac51af77d0a
 U
 %src/ROBOT/resources/sensor_input.fxml,9\b\9b67abd09c2a9cbe9192fd297ef9f9287104d30d
-R
-"src/ROBOT/Applications/SiLSiL.java,7\7\77143ccef5f51b75973066a8dc915af8df57eff8
 U
 %src/ROBOT/resources/output_table.fxml,2\7\27d1509b567c20fa62a5e562728311c3fed2454b
 K

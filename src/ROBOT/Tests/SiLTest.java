@@ -57,7 +57,7 @@ public class SiLTest extends Thread implements CarSensorInput, CarMotorOutput {
         Thread.sleep(3000);
 
         // Check if Robot drives forward
-        verify(currentSpeed, driver.getSpeedForward());
+        verify(currentSpeed, -driver.getSpeedForward());
         verify(currentSteering, 0);
 
         Thread.sleep(500);
@@ -68,8 +68,8 @@ public class SiLTest extends Thread implements CarSensorInput, CarMotorOutput {
         Thread.sleep(3000);
 
         //Check, if  robot drives to right
-        verify(currentSpeed, driver.getSpeedForward());
-        verify(currentSteering, driver.getSteeringValue());
+        verify(currentSpeed, -driver.getSpeedForward());
+        verify(currentSteering, -driver.getSteeringValue());
 
         Thread.sleep(500);
 
@@ -113,19 +113,19 @@ public class SiLTest extends Thread implements CarSensorInput, CarMotorOutput {
         Thread.sleep(3000);
 
         //check if robot drives forward
-        verify(currentSpeed, driver.getSpeedForward());
+        verify(currentSpeed, -driver.getSpeedForward());
         verify(currentSteering, 0);
 
         Thread.sleep(500);
 
         //another vehicle appears in front right to the robot -> should drive left
-        distances.put(Sensor.FL, 80d);
+        //distances.put(Sensor.FL, 80d);
         distances.put(Sensor.FR, 30d);
 
         Thread.sleep(3000);
 
         //check if robot is driving to the left
-        verify(currentSpeed, driver.getSpeedForward());
+        verify(currentSpeed, -driver.getSpeedForward());
         verify(currentSteering, driver.getSteeringValue());
 
         Thread.sleep(500);

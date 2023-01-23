@@ -7,7 +7,7 @@ import lejos.hardware.port.MotorPort;
 
 public class EV3MotorOutput implements CarMotorOutput {
 
-    public static final int MAX_ANGLE = 30;
+    public static final int MAX_ANGLE = 50;
 
     private EV3LargeRegulatedMotor driveMotorR = new EV3LargeRegulatedMotor(MotorPort.A);
     private EV3LargeRegulatedMotor driveMotorL = new EV3LargeRegulatedMotor(MotorPort.B);

@@ -15,9 +15,9 @@ public class Driver {
 
     CarMotorOutput output;
     Commands currentCommand;
-    private int speedForward = 100;
-    private int speedBackward = -100;
-    private int steeringValue = 0;
+    private int speedForward = 250;
+    private int speedBackward = -150;
+    private int steeringValue = 160;
     private long lockedTill = 0;
 
     /**
@@ -59,32 +59,32 @@ public class Driver {
         switch (command) {
             case FORWARD:
                 output.steering(0);
-                output.setSpeed(speedForward);
+                output.setSpeed(-speedForward);
                 break;
 
             case REVERSE:
                 output.steering(0);
-                output.setSpeed(speedBackward);
+                output.setSpeed(-speedBackward);
                 break;
 
             case LEFT:
-                output.steering(-100);
-                output.setSpeed(speedForward);
+                output.steering(steeringValue);
+                output.setSpeed(-speedForward);
                 break;
 
             case RIGHT:
-                output.steering(100);
-                output.setSpeed(speedForward);
+                output.steering(-steeringValue);
+                output.setSpeed(-speedForward);
                 break;
 
             case REV_LEFT:
-                output.steering(-100);
-                output.setSpeed(speedBackward);
+                output.steering(steeringValue);
+                output.setSpeed(-speedBackward);
                 break;
 
             case REV_RIGHT:
-                output.steering(100);
-                output.setSpeed(speedBackward);
+                output.steering(-steeringValue);
+                output.setSpeed(-speedBackward);
                 break;
 
             case HALT:

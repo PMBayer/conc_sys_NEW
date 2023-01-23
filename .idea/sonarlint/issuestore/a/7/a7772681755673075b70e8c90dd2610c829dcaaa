@@ -1,0 +1,6 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ß­“
+’
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(úÆ²Œùÿÿÿÿ
+†
+java:S1130"kRemove the declaration of thrown exception 'ROBOT.CarException', as it cannot be thrown from method's body.(úÆ²Œùÿÿÿÿ
